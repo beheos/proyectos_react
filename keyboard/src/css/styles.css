@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #003249;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title{
+    text-align: center;
+    font-size: 4rem;
+    -webkit-text-stroke: 2px #ff5964;
+    color: transparent; 
+}
+
+.keyboard__container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.paper{
+    background-color: #39393a;
+    width: 90%;
+    height: 45px;
+    margin: auto;
+    text-align: center;
+    border: 2px solid #ff5964;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.paper__parrafo{
+    font-size:2rem;
+    color: #fff;
+}
+
+.keyboard{
+    background-color: #39393a;
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #000;
+}
+
+.btn{
+    margin: 5px auto;
+    background-color: #39393a;
+    color: #ff5964;
+    border-radius: 6px;
+    border: 1px solid #ff5964;
+    /* box-shadow: 5px 5px 10px #ff5964; */
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-shadow: 1px 1px 5px #ff5964;
+    cursor: pointer;
+}
+
+.btn:hover{
+    font-weight: 700;
+    color: #3affde;
+    text-shadow:none;
+    box-shadow: 5px 5px 10px #3affde;
+}
+
+.btn-letter{
+    padding: 10px 20px; 
+}
+
+.btn-large{
+    padding: 10px 20px; 
+    width: 300px;
+}
+
+@media (max-width:800px) {
+    .keyboard{
+        max-width: 450px;
+    }
+
+    .btn{
+        font-size: .8rem;
+        padding: 7px 12px;
+    }
+
+    .btn-large{
+        padding: 10px 20px; 
+        width: 200px;
+    }
+
+}
+
+@media (max-width:504px) {
+    .keyboard__container{
+        width: 100%;
+    }
+
+    .keyboard{
+        max-width: inherit;
+        padding: 10px 0;
+    }
+    .btn{
+        font-size: 1.2rem;
+        padding: 3px 5px;
+    }
+
+    .btn-large{
+        padding: 3px 6px;
+        width: 120px;
+    }
+
+    .paper{
+        width: 80%;
+        height: 30px;
+    }
+
+    .paper__parrafo{
+        font-size:1.2rem;
+        color: #fff;
+    }
+}
